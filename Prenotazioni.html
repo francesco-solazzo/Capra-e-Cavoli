@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="b&b, Hotel, Capra e Cavoli" />
+    <meta name="author" content="Antonio, Francesco, Claudio, Giovanni" />
+    <meta name="description" content="Homepage, Capra e Cavoli" />
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Prenotazioni</title>
+
+
+    <style>
+
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding-bottom: 40px;
+        }
+
+            form label {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            form input {
+                height: 30px;
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form button {
+                background-color: gray;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+            }
+
+        button {
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: red;
+            line-height: 20px;
+        }
+
+            button a {
+                color: white;
+            }
+    </style>
+</head>
+
+<body>
+    <br /> <br />
+    <header>
+        <h1>Capra & Cavoli </h1>
+        <h2>Prenotazioni</h2>
+        <img src="img/Logo.jpg">
+
+    </header>
+
+    <nav>
+        <!--link per andare nelle sezioni -->
+        <ul>
+            <li>    <a href="index.html">Home</a>        </li>
+            <li>
+                <a href="Camere.html"> Camere </a>
+            </li>
+            <li>
+                <a href="Servizi_offerti.html">Servizi</a>
+            </li>
+            <li>
+                <a href="Prenotazioni.html">Prenotazione</a>
+            </li>
+            <li>
+                <a href="Recensioni.html">Recensioni</a>
+            </li>
+            <li>
+                <a href="Contatti.html">Contatti</a>
+            </li>
+            <li>
+                <a href="Località ed eventi.html"> Località ed Eventi</a>
+            </li>
+            <li>
+                <a href="Galleria.html">Galleria Immagini</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <section>
+        <!--Prenotazione-->
+        <form>
+            <h3 class="h2-preno">Prenotazione</h3>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="name" required>
+
+            <label for="numero">telefono:</label>
+            <input type="text" name="numero" id="numero" required>
+
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data" required>
+
+            <label for="time">Orario:</label>
+            <input type="time" name="orario" id="orario" required>
+
+            <!--selezione camera-->
+
+            <label for="mySelect">Seleziona la tua camera:</label>
+            <select name="servizi" id="servizi">
+                <option value="option1">Camera Singola </option>
+                <option value="option2">Camera matrimoniale </option>
+                <option value="option3">Suite familiare</option>
+                <option value="option4">camera vista montagna</option>
+            </select>
+
+
+            <!--selezione servizi-->
+
+            <label for="servizi">Seleziona un servizio: </label>
+            <select name="servizi" id="servizi">
+                <option value="colazione">Colazione Deluxe</option>
+                <option value="tour">Tour guidato della città</option>
+                <option value="Massaggio">Massaggio rilassante</option>
+                <option value="cena romantica">Cena romantica</option>
+            </select>
+            <br>
+            <br>
+
+            <button type="submit">Prenota Ora</button>
+        </form>
+    </section>
+
+
+
+    <footer>
+        <!--diritti e pagine social-->
+        <p>  © 2024 B&B Capra e Cavoli. Tutti i diritti riservati</p>
+        <a class="instagram" href="#">Instagram</a>
+        <a href="#" class="fa fa-facebook"></a>
+    </footer>
+</html>
